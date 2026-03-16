@@ -1,0 +1,86 @@
+import type { ReleaseTrackerData } from './models'
+
+export const sampleData: ReleaseTrackerData = {
+  platformVersions: [
+    {
+      component: 'Backend',
+      client: 'Themax',
+      type: 'API',
+      prodVersion: '2.3.3',
+      previousVersion: '2.3.2',
+      branch: 'release/v2.3.3',
+      lastReleaseDate: '2026-02-18',
+      apiVersion: '2.3.2',
+      owner: 'Ashok',
+      storeStatus: 'Live',
+      updatedAt: '2026-03-16T10:00:00.000Z',
+    },
+  ],
+  releaseTracker: [
+    {
+      date: '2026-01-16',
+      client: '24Trains',
+      platform: 'Android Mobile',
+      repo: 'wb_api',
+      branch: 'hotfix/expired-subscriptions',
+      commitId: '2a2a24e7...',
+      status: 'Live',
+      environment: 'Prod',
+      featureImpacted: 'Adyen Payments issues, iOS payment issue',
+      updatedAt: '2026-03-16T10:00:00.000Z',
+    },
+  ],
+  deviceMatrix: [
+    {
+      client: 'WeeFree',
+      layer: 'Frontend',
+      platformOrDevice: 'Nexo, LG commercial',
+      newVersion: '0.0.22',
+      oldVersion: '0.0.11',
+      branchOrTag: 'tvaas_release/v0.0.22',
+      lastReleaseDate: '2026-02-16',
+      status: 'Live',
+      owner: 'Sudhakar',
+      updatedAt: '2026-03-16T10:00:00.000Z',
+    },
+  ],
+  apiCompatibility: [
+    {
+      apiVersion: '2.3.2',
+      breaking: 'yes',
+      releaseDate: '2025-12-15',
+      usedByPlatforms: 'Web, Android, iOS, Android TV, Apple TV, Roku TV, FireTV',
+      blockedPlatforms: 'NA',
+      notes: 'Payment upgradation changes',
+      updatedAt: '2026-03-16T10:00:00.000Z',
+    },
+  ],
+  nextReleaseDeployments: [
+    {
+      date: '2026-02-20',
+      client: 'Themax',
+      platform: 'Android Mobile',
+      branch: 'release/v2.3.3',
+      env: 'Prod',
+      features: 'New payment gateway',
+      status: 'Ready',
+      owner: 'Ashok',
+      prodReleaseDate: '2026-02-25',
+      buildLinks: 'https://build.example.com/123',
+      updatedAt: '2026-03-16T10:00:00.000Z',
+    },
+    {
+      date: '2026-02-21',
+      client: 'WeeFree',
+      platform: 'Android TV',
+      branch: 'release/tvaas-1.0.0',
+      env: 'Preprod',
+      features: 'Bug fixes, store_version 1.0.2, build_number 6',
+      status: 'Pending',
+      owner: 'Raja',
+      updatedAt: '2026-03-16T10:00:00.000Z',
+    },
+  ],
+  updatedAt: '2026-03-16T10:00:00.000Z',
+}
+
