@@ -1,31 +1,39 @@
 {
-  "name": "releasetracker",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "release-tracker",
+  "version": "1.0.0",
+  "description": "Release Tracker — React frontend + MySQL backend API",
+  "main": "server.js",
   "scripts": {
     "dev": "vite",
+    "start": "node server.js",
+    "server": "nodemon server.js",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
-  "devDependencies": {
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.1",
-    "typescript": "~5.9.3",
-    "vite": "^8.0.0"
-  },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.24.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^7.3.9",
     "@mui/material": "^7.3.9",
     "@tanstack/react-router": "^1.167.3",
     "@tanstack/react-table": "^8.21.3",
+    "cors": "^2.8.5",
     "dayjs": "^1.11.20",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.9.7",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "xlsx": "^0.18.5",
     "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "nodemon": "^3.1.0",
+    "typescript": "~5.9.3",
+    "vite": "^8.0.0"
   }
 }
